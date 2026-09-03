@@ -106,3 +106,51 @@ body {
 .bg-grid-div p.small {
     font-size: 0.9rem;
 }
+
+.bg-footer {
+    background-color: var(--theme-primary);
+}
+
+.bg-footer-custom {
+    background-color: #313632; /* Cor de fundo esverdeada/acinzentada escura */
+    color: #ffffff;
+}
+.text-muted-custom {
+    color: #a4aba6 !important; /* Cor do texto secundário */
+}
+.emergency-card {
+    background-color: #3e4440; /* Fundo do card de emergência */
+    border-radius: 8px;
+}
+.emergency-title {
+    color: #8a96c6; /* Cor roxa/azulada do título de emergência */
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+.emergency-icon {
+    color: #8a96c6;
+    font-size: 1.8rem;
+}
+.social-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #424945; /* Fundo dos botões sociais */
+    border: none;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.social-btn:hover {
+    background-color: #555d58;
+    color: white;
+}
+.footer-link {
+    color: #a4aba6;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-link:hover {
+    color: #ffffff;
+}
