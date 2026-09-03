@@ -51,3 +51,13 @@ body {
     font-weight: 350;
 }
 
+.text-p li {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--bs-text-p);
+}
+
+.bg-mission {
+    background-color: #E8EFEA;
+}
+
