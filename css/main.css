@@ -61,3 +61,12 @@ body {
     background-color: #E8EFEA;
 }
 
+.our-mission {
+    text-transform: uppercase;
+    color: #3D5A4F;
+    background-color: #FBF9F6;
+    border-radius: 2.25rem;
+    padding: 0.05rem 1rem;
+    
+}
+
