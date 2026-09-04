@@ -104,7 +104,7 @@ body {
 
 /* Remove a margem extra inferior da tag P dentro do cartão para melhor alinhamento */
 .bg-grid-div p.small {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .bg-footer {
@@ -154,3 +154,40 @@ body {
 .footer-link:hover {
     color: #ffffff;
 }
+
+.bg-passo-a-passo {
+    background-color: #f3f5fb; /* Fundo azul acinzentado claro */
+}
+
+.badge-passo {
+    background-color: #eaf1ed; /* Fundo esverdeado da tag */
+    color: #5c7b64; /* Texto verde escuro */
+    padding: 0.4rem 1.2rem;
+    border-radius: 50rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.step-card {
+    background-color: #ffffff;
+    border-radius: 24px; /* Bordas bem arredondadas */
+    padding: 2.5rem 2rem; /* Espaçamento interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); /* Sombra bem sutil */
+    display: flex;
+    flex-direction: column;
+}
+
+.circle-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eceffe; /* Fundo lilás claro */
+    color: #7983c8; /* Texto lilás escuro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
