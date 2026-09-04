@@ -130,6 +130,8 @@ body {
     padding: 2rem 1.5rem; /* Mais espaçamento interno para imitar a imagem */
     border-radius: 1.5rem; /* Bordas bem arredondadas, mas um pouco mais suaves que 2.25rem */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); /* Sombra super leve (opcional, dá profundidade) */
+    min-height: 220px;
+    max-height: 220px;
 }
 
 /* Cor e tamanho customizados para os números grandes */

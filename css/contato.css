@@ -1,11 +1,85 @@
-.emergency-number{
-    color: #E07A5F;
-    font-size: 1.5em;
-    font-weight: bolder;
+/* Cores Baseadas no Layout */
+:root {
+    --green-brand: #769784;
+    --green-brand-hover: #5d7a69;
+    --orange-brand: #E07A5F;
+    --bg-body: #FDFDFD;
+    --bg-hero: #F9F7F3;
 }
 
-.emergency-card-telephone{
-    border: 2px solid #E2EBE8;
+/* Seção do Cabeçalho (Hero) */
+.hero-section {
+    padding: 4rem 0;
+}
+.tag-fale-conosco {
+    background-color: #E8F0EA;
+    color: #557563;
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* Caixas de Conteúdo (Cards Brancos) */
+.content-box {
     background-color: #FFFFFF;
-    border-radius: 1em;
+    border: 1px solid #EAEAEA;
+    border-radius: 1rem;
+    padding: 2.5rem;
+}
+
+/* Formulário */
+.form-control-custom {
+    border: 1px solid #E0E0E0;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+}
+.form-control-custom:focus {
+    border-color: var(--green-brand);
+    box-shadow: 0 0 0 0.2rem rgba(118, 151, 132, 0.25);
+}
+.btn-primary-custom {
+    border-radius: 0.5rem
+}
+.btn-primary-custom:hover {
+    background-color: var(--green-brand-hover);
+    color: white;
+}
+
+/* Canais Oficiais */
+.icon-circle {
+    width: 42px;
+    height: 42px;
+    background-color: #E8F0EA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green-brand);
+    flex-shrink: 0;
+}
+
+/* Emergência */
+.emergency-box {
+    border: 1px solid var(--orange-brand);
+    background-color: #FDF8F5;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.emergency-icon-circle {
+    width: 32px;
+    height: 32px;
+    background-color: var(--orange-brand);
+    border-radius: 50%;
+    display: inline-block;
+}
+.emergency-card-telephone {
+    border: 1px solid #EAEAEA;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+}
+.emergency-number {
+    color: var(--orange-brand);
+    font-size: 1.5rem;
+    font-weight: 800;
 }
