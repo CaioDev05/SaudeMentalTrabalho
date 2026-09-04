@@ -7,6 +7,8 @@
     /* Variáveis globais para o tema para facilitar futuras alterações */
     --theme-primary: #3D5A4F;
     --theme-primary-hover: #2E443B; /* Tom mais escuro para feedback de clique/hover */
+    --theme-white: #FFFFFF;
+    --theme-547565: #547565; /* Cor verde acinzentada */
 }
 
 body {
@@ -14,7 +16,7 @@ body {
 }
 
 /* Agrupamento de propriedades repetidas nos botões */
-.btn-success, 
+.btn-success, .btn-agendar, .btn-voluntario,
 .btn-outline-secondary {
     border-radius: 2.25rem;
     padding: 0.75rem 2rem;
@@ -35,6 +37,45 @@ body {
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: var(--theme-primary);
     --bs-btn-disabled-border-color: var(--theme-primary);
+}
+
+.btn-agendar {
+    --bs-btn-color: #6B8E7D; /* Cor do texto do botão */
+    --bs-btn-bg: var(--theme-white);
+    --bs-btn-border-color: var(--theme-white);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--theme-primary-hover);
+    --bs-btn-hover-border-color: var(--theme-primary-hover);
+    --bs-btn-focus-shadow-rgb: 60, 153, 110;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--theme-primary-hover);
+    --bs-btn-active-border-color: var(--theme-primary-hover);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--theme-white);
+    --bs-btn-disabled-border-color: var(--theme-white);
+}
+
+.btn-voluntario {
+    --bs-btn-color: var(--theme-white); /* Cor do texto do botão */
+    --bs-btn-bg: var(--theme-547565);
+    --bs-btn-border-color: var(--theme-547565);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--theme-primary-hover);
+    --bs-btn-hover-border-color: var(--theme-primary-hover);
+    --bs-btn-focus-shadow-rgb: 60, 153, 110;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--theme-primary-hover);
+    --bs-btn-active-border-color: var(--theme-primary-hover);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--theme-547565);
+    --bs-btn-disabled-border-color: var(--theme-547565);
+}
+
+.btn-voluntario, .btn-agendar {
+    min-width: 300px; /* Garante que os botões tenham largura mínima consistente */
+    min-height: 60px; /* Garante que os botões tenham altura mínima consistente */
 }
 
 .btn-outline-secondary {
@@ -191,3 +232,43 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.bg-atende-voluntario {
+    background-color: #6B8E7D; /* Fundo azul acinzentado claro */
+    padding: 2.5rem 2rem; /* Espaçamento interno */
+}
+
+.bg-importancia {
+    background-color: #f3f5fb; /* Fundo azul acinzentado claro */
+    padding: 2.5rem 2rem; /* Espaçamento interno */
+}
+
+.bg-importancia-card {
+    background-color: #FFF; 
+    border-radius: 24px; /* Bordas bem arredondadas */
+    width: 17rem;
+    padding: 2rem 1.5rem; /* Ajustei levemente o padding para os itens respirarem melhor */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); /* Sombra bem sutil */
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nova classe para o fundo arredondado dos ícones */
+.icon-wrapper {
+    background-color: #e8f5e9; /* Fundo verde bem suave */
+    color: #2e7d32; /* Cor do ícone mais escura para contraste */
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%; /* Deixa perfeitamente redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo sutil para o texto descritivo */
+.card-desc {
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
