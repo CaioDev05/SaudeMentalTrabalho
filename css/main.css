@@ -13,6 +13,7 @@
 
 body {
     background-color: #FBF9F6;
+    max-height: 100vh;
 }
 
 /* Agrupamento de propriedades repetidas nos botões */

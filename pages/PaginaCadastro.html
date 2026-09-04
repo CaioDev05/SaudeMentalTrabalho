@@ -1,13 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Cadastro</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Página de Cadastro</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="../css/main.css">
+     <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+     <header class="border-bottom mb-4 py-3">
+          <div class="container">
+               <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+
+                    <!-- Parte da Logo -->
+                    <div class="col-md-3 mb-2 mb-md-0 d-flex">
+                         <a class="d-inline-flex align-items-center link-body-emphasis text-decoration-none h4 mb-0"
+                              href="../index.html">
+                              <img src="../img/logo-badge.png" alt="Logo" width="36" height="32" class="me-2">
+                              <span class="fw-semibold">Mente Serena</span>
+                         </a>
+                    </div>
+
+                    <!-- Links de Navegação -->
+                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                         <li><a href="../index.html" class="nav-link px-2 link-body-emphasis">Início</a></li>
+                         <li><a href="PaginaPerfilVoluntarios.html"
+                                   class="nav-link px-2 link-body-emphasis">Voluntários</a></li>
+                         <li><a href="PaginaAgendamento.html" class="nav-link px-2 link-body-emphasis">Agendamento</a>
+                         </li>
+                         <li><a href="PaginaBlogs.html" class="nav-link px-2 link-body-emphasis">Blogs</a></li>
+                         <li><a href="PaginaFAQ.html" class="nav-link px-2 link-body-emphasis">FAQ</a></li>
+                         <li><a href="PaginaContatoSuporte.html" class="nav-link px-2 link-body-emphasis">Contato</a>
+                         </li>
+                    </ul>
+
+                    <!-- Botões de Login e Jornada -->
+                    <div class="col-md-3 text-md-end text-center mt-3 mt-md-0">
+                         <a href="PaginaCadastro.html" class="btn btn-success fw-semibold">Entrar / Cadastrar
+                              <span class="ms-1">
+                                   <i class="bi bi-arrow-right"></i>
+                              </span>
+                         </a>
+                    </div>
+
+               </nav>
+          </div>
+     </header>
+     <main class="bg-section">
+          <section>
+               <div class="container px-4 py-5">
+                    <div class="row flex-lg-reverse align-items-center g-5 py-5">
+                         
+                         <!-- Coluna da Esquerda (Textos) -->
+                         <div class="col-12 col-lg-6 mx-auto pe-lg-5">
+                              <div class="mb-4">
+                                   <span class="badge-welcome text-uppercase">Seja Bem-vindo(a)</span>
+                              </div>
+                              <h1 class="display-4 fw-bolder text-body-emphasis lh-1 mb-4" style="color: #2A332F !important;">
+                                   Damos as boas-vindas ao seu espaço seguro de acolhimento.
+                              </h1>
+                              <p class="lead mb-5 text-muted" style="font-size: 1.1rem;">
+                                   Lembre-se: sua privacidade é sagrada. Todos os nossos atendimentos respeitam rigorosamente o sigilo profissional de acordo com a ética da psicologia.
+                              </p>
+                              
+                              <div class="rounded-4 p-4" style="background-color: #F0F4F8; color: #4A5568;">
+                                   <p class="mb-3" style="font-size: 0.95rem;">
+                                        "Olhar para dentro de si e pedir ajuda é o passo mais generoso que você pode dar em direção ao seu próprio futuro."
+                                   </p>
+                                   <p class="mb-0 fw-bold" style="font-size: 0.85rem;">— MENTE ABERTA</p>
+                              </div>
+                         </div>
+                         
+                         <!-- Coluna da Direita (Formulário) -->
+                         <div class="col-lg-6">
+                              <div class="bg-login mx-auto w-100" style="max-width: 500px;">
+                                   <form>
+                                        <!-- Toggle Cadastro / Login -->
+                                        <div class="toggle-container mb-4">
+                                             <button type="button" class="flex-grow-1 toggle-btn active">Cadastro</button>
+                                             <button type="button" class="flex-grow-1 toggle-btn">Login</button>
+                                        </div>
+
+                                        <!-- Toggle Tipo de Usuário -->
+                                        <label class="form-label fw-semibold" style="font-size: 0.9rem;">Quero me cadastrar como:</label>
+                                        <div class="toggle-container mb-4">
+                                             <button type="button" class="flex-grow-1 toggle-btn toggle-btn-role active" style="font-size: 0.85rem;">Usuário (Buscando Ajuda)</button>
+                                             <button type="button" class="flex-grow-1 toggle-btn toggle-btn-role text-muted" style="font-size: 0.85rem; background: transparent;">Voluntário (Psicólogo/Terapeuta)</button>
+                                        </div>
+
+                                        <!-- Inputs -->
+                                        <div class="mb-3">
+                                             <label for="nome" class="form-label" style="font-size: 0.9rem;">Nome Completo (ou Codinome)</label>
+                                             <input type="text" class="form-control form-control-custom" id="nome" placeholder="Ex: Maria da Silva" required>
+                                        </div>
+                                        <div class="mb-3">
+                                             <label for="email" class="form-label" style="font-size: 0.9rem;">Endereço de E-mail</label>
+                                             <input type="email" class="form-control form-control-custom" id="email" placeholder="maria@exemplo.com" required>
+                                        </div>
+                                        <div class="mb-4">
+                                             <label for="senha" class="form-label" style="font-size: 0.9rem;">Senha Secreta</label>
+                                             <div class="input-group input-group-password">
+                                                  <input type="password" class="form-control form-control-custom" id="senha" placeholder="••••••••••••" required>
+                                                  <span class="input-group-text"><i class="bi bi-eye-slash"></i></span>
+                                             </div>
+                                        </div>
+
+                                        <!-- Checkbox -->
+                                        <div class="mb-4 form-check d-flex align-items-start">
+                                             <input type="checkbox" class="form-check-input form-check-input-custom mt-1 me-2" id="termos" required>
+                                             <label class="form-check-label text-muted" for="termos" style="font-size: 0.85rem; line-height: 1.4;">
+                                                  Li e aceito os Termos de Uso e o compromisso ético de confidencialidade da plataforma Mente Aberta.
+                                             </label>
+                                        </div>
+
+                                        <!-- Botão Criar Conta -->
+                                        <button type="submit" class="btn btn-primary-custom w-100 fw-semibold mb-4">
+                                             Criar Minha Conta Gratuita
+                                        </button>
+
+                                        <!-- Redes Sociais -->
+                                        <div class="text-center">
+                                             <p class="text-muted mb-3" style="font-size: 0.75rem; font-weight: 600;">OU CADASTRE-SE COM</p>
+                                             <div class="row gx-3">
+                                                  <div class="col-6">
+                                                       <button type="button" class="btn btn-outline-social w-100 d-flex justify-content-center align-items-center">
+                                                            <i class="bi bi-google me-2 fs-5"></i> Google
+                                                       </button>
+                                                  </div>
+                                                  <div class="col-6">
+                                                       <button type="button" class="btn btn-outline-social w-100 d-flex justify-content-center align-items-center">
+                                                            <i class="bi bi-facebook me-2 fs-5"></i> Facebook
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </form>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </main>
+     <footer class="bg-footer-custom pt-5 pb-4">
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 pe-lg-5">
+                         <a class="d-inline-flex align-items-center text-white text-decoration-none mb-3" href="#">
+                              <img src="../img/logo-badge.png" alt="Logo" width="36" height="32" class="me-2">
+                              <span class="fs-4 fw-bold">Mente Serena</span>
+                         </a>
+                         <p class="text-muted-custom mb-4" style="font-size: 0.95rem; line-height: 1.6;">
+                              Conectando corações acolhedores a mentes que buscam paz. Apoio psicológico voluntário,
+                              seguro,
+                              humanizado e totalmente gratuito.
+                         </p>
+
+                         <div class="emergency-card d-flex align-items-center p-3">
+                              <i class="bi bi-telephone-outbound emergency-icon me-3"></i>
+                              <div>
+                                   <div class="emergency-title text-uppercase fw-semibold mb-1">Canal de Emergência
+                                   </div>
+                                   <div class="fw-bold fs-5 text-white">CVV - Ligue 188 (24 Horas)</div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 mb-4">
+                         <h6 class="fw-bold mb-4">Plataforma</h6>
+                         <ul class="list-unstyled">
+                              <li class="mb-3"><a href="#" class="footer-link">Encontre Ajuda</a></li>
+                              <li class="mb-3"><a href="#" class="footer-link">Seja Voluntário</a></li>
+                              <li class="mb-3"><a href="#" class="footer-link">Como Funciona</a></li>
+                              <li class="mb-3"><a href="#" class="footer-link">Código de Ética</a></li>
+                         </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 mb-4">
+                         <h6 class="fw-bold mb-4">Recursos</h6>
+                         <ul class="list-unstyled">
+                              <li class="mb-3"><a href="#" class="footer-link">Artigos & Blog</a></li>
+                              <li class="mb-3"><a href="#" class="footer-link">Perguntas Frequentes</a></li>
+                              <li class="mb-3"><a href="#" class="footer-link">Imprensa</a></li>
+                              <li class="mb-3"><a href="#" class="footer-link">Fale Conosco</a></li>
+                         </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 mb-4">
+                         <h6 class="fw-bold mb-4">Acompanhe-nos</h6>
+                         <div class="d-flex mb-4">
+                              <a href="#" class="social-btn rounded-circle me-3"><i class="bi bi-instagram"></i></a>
+                              <a href="#" class="social-btn rounded-circle me-3"><i class="bi bi-facebook"></i></a>
+                              <a href="#" class="social-btn rounded-circle me-3"><i class="bi bi-twitter"></i></a>
+                              <a href="#" class="social-btn rounded-circle"><i class="bi bi-linkedin"></i></a>
+                         </div>
+                         <p class="text-muted-custom" style="font-size: 0.85rem; line-height: 1.5;">
+                              Iniciativa social sem fins lucrativos em conformidade com as diretrizes do CFP brasileiro.
+                         </p>
+                    </div>
+               </div>
+
+               <!-- Parte Inferior do Rodapé (Direitos e Links de Privacidade) -->
+               <div class="row border-top border-secondary pt-4 mt-2" style="border-color: #4a514d !important;">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                         <p class="text-muted-custom mb-0" style="font-size: 0.9rem;">
+                              © 2026 Mente Aberta. Todos os direitos reservados.
+                         </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                         <a href="#" class="footer-link" style="font-size: 0.9rem;">Política de Privacidade</a>
+                         <span class="text-muted-custom mx-2">•</span>
+                         <a href="#" class="footer-link" style="font-size: 0.9rem;">Termos de Uso</a>
+                         <span class="text-muted-custom mx-2">•</span>
+                         <a href="#" class="footer-link" style="font-size: 0.9rem;">Código do Paciente</a>
+                    </div>
+               </div>
+          </div>
+     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+          crossorigin="anonymous"></script>
 </body>
+
 </html>

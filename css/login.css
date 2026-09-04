@@ -1,0 +1,121 @@
+/* Cor de fundo da seção principal para dar contraste com o formulário branco */
+.bg-section {
+    background-color: #F9F8F6;
+}
+
+/* Ajuste do Card de Login */
+.bg-login {
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); /* Sombra mais difusa e suave */
+    border-radius: 24px; /* Reduzido de 50px para combinar com a imagem */
+    padding: 2.5rem !important;
+}
+
+/* Badge Superior (Seja bem-vindo) */
+.badge-welcome {
+    background-color: #EAF0EC;
+    color: #3D5A4F;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Container de botões (Toggle de Abas) */
+.toggle-container {
+    background-color: #F9F8F6;
+    border-radius: 50px;
+    padding: 4px;
+    display: flex;
+}
+
+.toggle-btn {
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #8C8C8C;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+    background-color: #FFFFFF;
+    color: #3D5A4F;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.toggle-btn-role.active {
+    background-color: #3D5A4F;
+    color: #FFFFFF;
+}
+
+/* Botão de Envio (Criar Conta) */
+.btn-primary-custom {
+    background-color: #3D5A4F;
+    border-color: #3D5A4F;
+    color: #FFFFFF;
+    border-radius: 12px;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+    background-color: #5A7A6A;
+    color: #FFFFFF;
+}
+
+/* Campos de Input */
+.form-control-custom {
+    border-radius: 12px;
+    border: 1px solid #E2EBE8;
+    padding: 0.8rem 1rem;
+    box-shadow: none;
+    font-size: 0.95rem;
+}
+
+.form-control-custom:focus {
+    border-color: #6B8E7D;
+    box-shadow: 0 0 0 0.2rem rgba(107, 142, 125, 0.25);
+}
+
+/* Grupo de Input para a Senha (ícone do olho) */
+.input-group-password .form-control-custom {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group-password .input-group-text {
+    background-color: transparent;
+    border: 1px solid #E2EBE8;
+    border-left: none;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    cursor: pointer;
+    color: #A0AAB2;
+}
+
+/* Botões Sociais */
+.btn-outline-social {
+    border: 1px solid #E2EBE8;
+    background-color: #FFFFFF;
+    color: #2C3330;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+}
+
+.btn-outline-social:hover {
+    background-color: #F8F9FA;
+}
+
+/* Checkbox Personalizado */
+.form-check-input-custom:checked {
+    background-color: #6B8E7D;
+    border-color: #6B8E7D;
+}
