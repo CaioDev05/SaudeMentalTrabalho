@@ -19,7 +19,7 @@
                 <!-- Parte da Logo -->
                 <div class="col-md-3 mb-2 mb-md-0 d-flex">
                     <a class="d-inline-flex align-items-center link-body-emphasis text-decoration-none h4 mb-0"
-                        href="#">
+                        style="transition: 0.3s;" href="#">
                         <img src="img/logo-badge.png" alt="Logo" width="36" height="32" class="me-2">
                         <span class="fw-semibold">Mente Serena</span>
                     </a>
@@ -75,12 +75,12 @@
 
                     <!-- Grupo de Botões -->
                     <div class="d-grid gap-3 d-md-flex justify-content-center justify-content-lg-start">
-                        <a href="pages/PaginaLogin.html"
+                        <a href="pages/PaginaCadastro.html"
                             class="btn btn-success btn-lg px-4 fw-semibold d-inline-flex align-items-center justify-content-center">
                             Preciso de Ajuda
                             <i class="bi bi-arrow-right ms-2"></i>
                         </a>
-                        <a href="pages/PaginaFAQ.html" class="btn btn-outline-secondary btn-lg px-4 fw-semibold">
+                        <a href="pages/PaginaCadastro.html" class="btn btn-outline-secondary btn-lg px-4 fw-semibold">
                             Quero ser Voluntário
                             <i class="bi bi-arrow-right ms-2"></i>
                         </a>
@@ -310,12 +310,17 @@
                         O primeiro passo é sempre o mais corajoso. Permita-se receber a escuta<br> acolhedora de um
                         voluntário qualificado hoje.
                     </p>
-                    <button class="btn btn-agendar btn-lg px-4 fw-semibold mt-3">
-                        Agendar Meu Atendimento <i class="bi bi-arrow-right ms-2"></i>
-                    </button>
-                    <button class="btn btn-voluntario btn-lg px-4 fw-semibold mt-3">
-                        Quero ser Voluntário <i class="bi bi-arrow-right ms-2"></i>
-                    </button>
+                    <a href="/pages/PaginaAgendamento.html">
+                        <button class="btn btn-agendar btn-lg px-4 fw-semibold mt-3">
+                            Agendar Meu Atendimento <i class="bi bi-arrow-right ms-2"></i>
+                        </button>
+                    </a>
+
+                    <a href="/pages/PaginaCadastro.html">
+                        <button class="btn btn-voluntario btn-lg px-4 fw-semibold mt-3">
+                            Quero ser Voluntário <i class="bi bi-arrow-right ms-2"></i>
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>
