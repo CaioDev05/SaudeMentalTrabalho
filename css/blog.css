@@ -16,7 +16,7 @@
 }
 
 /* Input de Busca */
-.form-control-custom {
+.form-control-custom, .form-control-email {
     background-color: #F8F6F2; /* Tom de bege bem claro */
     border: none;
     border-radius: 0.5rem;
@@ -26,6 +26,10 @@
 .form-control-custom:focus {
     box-shadow: none;
     outline: 1px solid #EAEAEA;
+    background-color: #FFFFFF;
+}
+
+.form-control-email {
     background-color: #FFFFFF;
 }
 
@@ -46,4 +50,11 @@
     line-height: 1.3;
     color: #212529;
     margin: 0;
+}
+
+.btn-email {
+    background-color: #547565;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
 }
