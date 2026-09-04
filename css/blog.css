@@ -1,0 +1,49 @@
+/* Pílula de Categoria (Roxa) */
+.tag-categoria {
+    color: #797DC0; 
+    background-color: #F0F2FA;
+    padding: 0.25rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Informações auxiliares (CRP e Tempo) */
+.article-CRP, .article-time {
+    font-size: 0.8rem;
+    color: #8D9390; /* Tom de cinza mais suave */
+}
+
+/* Input de Busca */
+.form-control-custom {
+    background-color: #F8F6F2; /* Tom de bege bem claro */
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+}
+.form-control-custom:focus {
+    box-shadow: none;
+    outline: 1px solid #EAEAEA;
+    background-color: #FFFFFF;
+}
+
+/* Textos do box "Mais Lidos" */
+.most-read-title {
+    color: #6B8E7D;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.2rem;
+    display: block;
+    text-transform: uppercase;
+}
+
+.most-read-text {
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #212529;
+    margin: 0;
+}

@@ -110,7 +110,6 @@ body {
 /* 1. Propriedades base compartilhadas (Herança) */
 .card-lt, 
 .card-lt-hero {
-    text-transform: uppercase;
     font-weight: bold;
     color: var(--theme-primary);
     background-color: #E8EFEA;
@@ -275,4 +274,16 @@ body {
     font-size: 0.9rem;
     line-height: 1.4;
     margin-bottom: 0;
+}
+
+.hero-section {
+    padding: 4rem 0;
+}
+
+/* Caixas de Conteúdo (Cards Brancos) */
+.content-box {
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 1rem;
+    padding: 2.5rem;
 }

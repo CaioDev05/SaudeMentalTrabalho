@@ -8,9 +8,7 @@
 }
 
 /* Seção do Cabeçalho (Hero) */
-.hero-section {
-    padding: 4rem 0;
-}
+
 .tag-fale-conosco {
     background-color: #E8F0EA;
     color: #557563;
@@ -20,13 +18,7 @@
     letter-spacing: 0.5px;
 }
 
-/* Caixas de Conteúdo (Cards Brancos) */
-.content-box {
-    background-color: #FFFFFF;
-    border: 1px solid #EAEAEA;
-    border-radius: 1rem;
-    padding: 2.5rem;
-}
+
 
 /* Formulário */
 .form-control-custom {
