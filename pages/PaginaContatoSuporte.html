@@ -10,6 +10,7 @@
           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
      <link rel="stylesheet" href="../css/main.css">
      <link rel="stylesheet" href="../css/login.css">
+     <link rel="stylesheet" href="../css/contato.css">
 </head>
 
 <body>
@@ -54,16 +55,22 @@
 
      <main>
           <div class="container py-5 px-4">
-               <div class="row flex-lg-reverse align-items-center g-5 py-5">
-                    <div class="col-lg-6 text-lg-start">
-                         <div class="d-inline-flex align-items-center mb-3 card-lt-hero">
-                              <span class="fw-semibold mb-0">FALE CONOSCO</span>
-                         </div>
-                         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-4">Estamos aqui para ouvir você</h1>
-                         <p class="lead text-p">Precisa de ajuda com agendamentos, quer tirar dúvidas sobre nossa
-                              conduta ética ou propor parcerias? Envie sua mensagem.</p>
+               <div class="col-7">
+                    <div class="d-inline-flex align-items-center mb-3 card-lt-hero">
+                         <span class="fw-semibold mb-0">FALE CONOSCO</span>
+                    </div>
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-4">Estamos aqui para ouvir você</h1>
+                    <p class="lead text-p">
+                         Precisa de ajuda com agendamentos, quer tirar dúvidas sobre nossa
+                         conduta ética ou propor parcerias? Envie sua mensagem.
+                    </p>
+               </div>
 
-                         <div class="bg-login mx-auto w-100 mt-5" >
+               <div class="row flex-lg-reverse align-items-center g-5 py-5">
+
+                    <div class="col-lg-7 mt-0">
+
+                         <div class="bg-login w-100">
                               <form>
                                    <!-- Inputs -->
                                    <div class="mb-3">
@@ -73,14 +80,16 @@
                                              placeholder="Ex: Maria da Silva" required>
                                    </div>
                                    <div class="mb-3">
-                                        <label for="email" class="form-label" style="font-size: 0.9rem;">Seu E-mail</label>
+                                        <label for="email" class="form-label" style="font-size: 0.9rem;">Seu
+                                             E-mail</label>
                                         <input type="email" class="form-control form-control-custom" id="email"
                                              placeholder="maria@exemplo.com" required>
                                    </div>
                                    <div class="mb-3">
-                                        <label for="subject" class="form-label" style="font-size: 0.9rem;">Qual o Assunto principal?</label>
-                                        <select class="form-control form-control-custom" id="subject" required> 
-                                             <option value="" disabled selected>Selecione uma opção</option> 
+                                        <label for="subject" class="form-label" style="font-size: 0.9rem;">Qual o
+                                             Assunto principal?</label>
+                                        <select class="form-control form-control-custom" id="subject" required>
+                                             <option value="" disabled selected>Selecione uma opção</option>
                                              <option value="dúvida">Dúvida sobre agendamento</option>
                                              <option value="elogio">Elogio</option>
                                              <option value="reclamação">Reclamação</option>
@@ -99,8 +108,8 @@
                               </form>
                          </div>
                     </div>
-                    <div class="col-lg-6 text-lg-start">
-                         <div class="bg-light p-4 rounded-4 shadow-sm">
+                    <div class="col-lg-5 text-lg-start">
+                         <div class="bg-light p-4 rounded-4 shadow-sm mb-5">
                               <h3 class="fw-bold mb-3">Canais Oficiais</h3>
                               <div class="d-flex align-items-center mb-2">
                                    <i class="bi bi-envelope icon-wrapper me-1"></i>
@@ -110,7 +119,20 @@
                                    <i class="bi bi-telephone me-2 icon-wrapper me-1"></i>
                                    <p class="mb-1"><strong>SUPORTE TÉCNICO</strong><br>Segunda a Sexta, 8h às 20h</p>
                               </div>
-                              
+                         </div>
+                         <div class="rounded-4 p-4" style="border: 2px solid #E07A5F; background-color: #FDF8F5;">
+                              <h3 class="fw-bold mb-3">Em caso de Emergência</h3>
+                              <p class="lead text-p">
+                                   Nossa plataforma realiza acolhimentos de apoio emocional agendados, não sendo indicada para crises imediatas. Se estiver passando por uma crise severa de saúde mental agora, utilize os canais abaixo de atendimento instantâneo gratuito:
+                              </p>
+                              <div class="d-flex align-items-center mb-2 emergency-card-telephone p-3">
+                                   <span class="emergency-number me-3">188</span>
+                                   <span><strong>CVV - Centro de Valorização da Vida </strong><br>Ligação gratuita, confidencial • 24 Horas</span>
+                              </div>
+                              <div class="d-flex align-items-center mb-2 emergency-card-telephone p-3">
+                                   <span class="emergency-number me-3">192</span>
+                                   <span><strong>SAMU - Urgência Médica </strong><br>Ligação gratuita, ambulância de resgate</span>
+                              </div>
                          </div>
                     </div>
                </div>

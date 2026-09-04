@@ -1,0 +1,11 @@
+.emergency-number{
+    color: #E07A5F;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.emergency-card-telephone{
+    border: 2px solid #E2EBE8;
+    background-color: #FFFFFF;
+    border-radius: 1em;
+}
