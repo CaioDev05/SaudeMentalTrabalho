@@ -5,11 +5,13 @@
     padding: 0.35rem 1rem;
     font-size: 0.85rem;
     transition: all 0.2s ease-in-out;
-    margin: 0; /* Removido margin-right fixo para usar o gap do bootstrap */
+    margin: 0;
+    /* Removido margin-right fixo para usar o gap do bootstrap */
 }
 
 .btn-category-active {
-    background-color: #6B8E7D; /* Ajustado para o tom de verde da imagem */
+    background-color: #6B8E7D;
+    /* Ajustado para o tom de verde da imagem */
     color: #FFFFFF;
     border: 1px solid #6B8E7D;
 }
@@ -37,7 +39,7 @@
 
 .card-hover:hover {
     transform: translateY(-3px);
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.08) !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
 }
 
 /* Base Pill (As cores específicas foram aplicadas inline no HTML de acordo com cada categoria) */
@@ -48,6 +50,13 @@
     font-weight: 700;
     display: inline-block;
     text-transform: capitalize;
+    background-color: #F0F2FA;
+    color: #8F94D2;
+}
+
+.tag-blog {
+    background-color: #E8F0EA;
+    color: #64A66C;
 }
 
 /* Inputs e Botão Newsletter */
@@ -67,4 +76,31 @@
 /* Removemos o foco padrão feio do bootstrap na paginação */
 .pagination .page-link:focus {
     box-shadow: none;
+}
+
+.btn-pagination-active {
+    background-color: #547565;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.15rem;
+}
+
+.btn-pagination-inactive {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid #E2EBE8;
+    padding: 1.15rem;
+}
+
+.most-read-title {
+    color: #6B8E7D;
+    font-weight: 600;
+    font-size: 0.80rem;
 }

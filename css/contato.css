@@ -18,13 +18,11 @@
     letter-spacing: 0.5px;
 }
 
-
-
 /* Formulário */
 .form-control-custom {
     border: 1px solid #E0E0E0;
     border-radius: 0.5rem;
-    padding: 0.75rem;
+    padding: 1rem;
 }
 .form-control-custom:focus {
     border-color: var(--green-brand);
