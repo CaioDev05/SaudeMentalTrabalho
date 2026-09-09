@@ -1,0 +1,29 @@
+.btn-search {
+    padding: 1rem;
+    background-color: #3D5A4F;
+    color: #FFFFFF;
+}
+
+.btn-search:hover {
+    background-color: #5A7A6A;
+    color: #FFFFFF;
+}
+
+.card-contact {
+    background: #5A7A6A;
+    border-radius: 1.5rem;
+}
+
+.btn-contact {
+  background-color: #ffffff;
+  color: #6a887c;
+  font-weight: 500;
+  border: none;
+  transition: opacity 0.2s ease;
+}
+
+.btn-contact:hover {
+  background-color: #f8f9fa;
+  color: #5a7469;
+}
+

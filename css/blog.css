@@ -1,37 +1,3 @@
-/* Ajuste de Botões de Categoria para usarem flex-wrap e gap sem quebrar o layout */
-.btn-category-active,
-.btn-category-inactive {
-    border-radius: 1.75rem;
-    padding: 0.35rem 1rem;
-    font-size: 0.85rem;
-    transition: all 0.2s ease-in-out;
-    margin: 0;
-    /* Removido margin-right fixo para usar o gap do bootstrap */
-}
-
-.btn-category-active {
-    background-color: #6B8E7D;
-    /* Ajustado para o tom de verde da imagem */
-    color: #FFFFFF;
-    border: 1px solid #6B8E7D;
-}
-
-.btn-category-active:hover {
-    background-color: #547565;
-    color: #FFFFFF;
-}
-
-.btn-category-inactive {
-    background-color: #FFFFFF;
-    border: 1px solid #EAEAEA;
-    color: #5F6B65;
-}
-
-.btn-category-inactive:hover {
-    background-color: #F8F6F2;
-    color: #212529;
-}
-
 /* Base Pill (As cores específicas foram aplicadas inline no HTML de acordo com cada categoria) */
 .tag-categoria {
     padding: 0.25rem 0.6rem;
