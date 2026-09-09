@@ -71,11 +71,13 @@
 
           <section class="container px-4 pb-5 mt-5">
                <div class="row g-4">
-                    <!-- Coluna Esquerda: Destaque do Mês -->
+                    
+                    <!-- COLUNA ESQUERDA: Tudo que é conteúdo principal (Destaque + Categorias + Grid) -->
                     <div class="col-lg-8">
+                         
+                         <!-- 1. Destaque do Mês -->
                          <h4 class="fw-bold mb-3 text-dark">Destaque do Mês</h4>
-
-                         <div class="bg-white border rounded-4 shadow-sm p-3 p-md-4  ">
+                         <div class="bg-white border rounded-4 shadow-sm p-3 p-md-4 mb-5">
                               <div class="row g-4 align-items-center h-100">
                                    <!-- Imagem do Artigo -->
                                    <div class="col-lg-5">
@@ -100,7 +102,7 @@
                                              minutos diários.
                                         </p>
 
-                                        <!-- Rodapé: Autora e Tempo (Flexbox para separar as pontas) -->
+                                        <!-- Rodapé: Autora e Tempo -->
                                         <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
                                              <div class="d-flex align-items-center">
                                                   <img src="../img/Ellipse.png" alt="Helena Souza"
@@ -108,8 +110,7 @@
                                                        style="object-fit: cover;">
                                                   <div class="d-flex flex-column">
                                                        <span class="fw-bold text-dark"
-                                                            style="font-size: 0.95rem; line-height: 1.2;">Helena
-                                                            Souza</span>
+                                                            style="font-size: 0.95rem; line-height: 1.2;">Helena Souza</span>
                                                        <span class="article-CRP">CRP 06/124589</span>
                                                   </div>
                                              </div>
@@ -120,9 +121,144 @@
                                    </div>
                               </div>
                          </div>
+
+                         <!-- 2. Navegação por Categorias responsiva -->
+                         <h4 class="fw-bold mb-3 text-dark">Navegar por Categoria</h4>
+                         <div class="d-flex flex-wrap gap-2 mb-4">
+                              <button class="btn btn-category-active">Todos</button>
+                              <button class="btn btn-category-inactive">Ansiedade</button>
+                              <button class="btn btn-category-inactive">Depressão</button>
+                              <button class="btn btn-category-inactive">Autocuidado</button>
+                              <button class="btn btn-category-inactive">Relacionamentos</button>
+                              <button class="btn btn-category-inactive">Mindfulness</button>
+                         </div>
+
+                         <!-- 3. Grid de Artigos -->
+                         <div class="row g-4 mb-5">
+
+                              <!-- Card 1 -->
+                              <div class="col-12 col-md-6 col-lg-4 d-flex">
+                                   <div class="bg-white border rounded-4 shadow-sm p-3 d-flex flex-column w-100 card-hover">
+                                        <img src="../img/post-photo.png" alt="post1"
+                                             class="w-100 rounded-3 mb-3 object-fit-cover" style="height: 140px;">
+                                        <div class="mb-2">
+                                             <span class="tag-categoria"
+                                                  style="background-color: #E8F0EA; color: #557563;">Relacionamentos</span>
+                                        </div>
+                                        <h6 class="fw-bold mb-2" style="font-size: 1rem; line-height: 1.3;">Como
+                                             estabelecer limites saudáveis nas relações cotidi...</h6>
+                                        <p class="text-secondary mb-3 flex-grow-1"
+                                             style="font-size: 0.85rem; line-height: 1.4;">
+                                             Aprenda a dizer não com empatia e construa relacionamentos mais
+                                             equilibrados e transparentes com ami...
+                                        </p>
+                                        <!-- Rodapé do Card -->
+                                        <div class="d-flex justify-content-between align-items-center mt-auto border-top pt-2">
+                                             <div class="d-flex align-items-center">
+                                                  <img src="../img/EllipseBlog1.png" alt="Ana"
+                                                       class="rounded-circle me-2" width="24" height="24"
+                                                       style="object-fit: cover;">
+                                                  <span class="fw-bold text-dark" style="font-size: 0.75rem;">Ana
+                                                       Carolina</span>
+                                             </div>
+                                             <span class="text-secondary" style="font-size: 0.7rem;">6 min de leitura</span>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <!-- Card 2 -->
+                              <div class="col-12 col-md-6 col-lg-4 d-flex">
+                                   <div class="bg-white border rounded-4 shadow-sm p-3 d-flex flex-column w-100 card-hover">
+                                        <img src="../img/post-photo2.png" alt="post2"
+                                             class="w-100 rounded-3 mb-3 object-fit-cover" style="height: 140px;">
+                                        <div class="mb-2">
+                                             <span class="tag-categoria"
+                                                  style="background-color: #F0F9ED; color: #64A66C;">Mindfulness</span>
+                                        </div>
+                                        <h6 class="fw-bold mb-2" style="font-size: 1rem; line-height: 1.3;">
+                                             Mindfulness para iniciantes: o poder de focar no presente</h6>
+                                        <p class="text-secondary mb-3 flex-grow-1"
+                                             style="font-size: 0.85rem; line-height: 1.4;">
+                                             Um guia prático com cinco minutos diários de atenção plena para
+                                             acalmar os fluxos de pensamentos estressant...
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center mt-auto border-top pt-2">
+                                             <div class="d-flex align-items-center">
+                                                  <img src="../img/EllipseBlog2.png" alt="Dr Roberto"
+                                                       class="rounded-circle me-2" width="24" height="24"
+                                                       style="object-fit: cover;">
+                                                  <span class="fw-bold text-dark" style="font-size: 0.75rem;">Dr.
+                                                       Roberto Mendes</span>
+                                             </div>
+                                             <span class="text-secondary" style="font-size: 0.7rem;">8 min de leitura</span>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <!-- Card 3 -->
+                              <div class="col-12 col-md-6 col-lg-4 d-flex">
+                                   <div class="bg-white border rounded-4 shadow-sm p-3 d-flex flex-column w-100 card-hover">
+                                        <img src="../img/post-photo3.png" alt="post3"
+                                             class="w-100 rounded-3 mb-3 object-fit-cover" style="height: 140px;">
+                                        <div class="mb-2">
+                                             <span class="tag-categoria"
+                                                  style="background-color: #F0F2FA; color: #797DC0;">Autocuidado</span>
+                                        </div>
+                                        <h6 class="fw-bold mb-2" style="font-size: 1rem; line-height: 1.3;">Como
+                                             identificar os sinais silenciosos de burnout no tra...</h6>
+                                        <p class="text-secondary mb-3 flex-grow-1"
+                                             style="font-size: 0.85rem; line-height: 1.4;">
+                                             Exaustão física extrema e distanciamento mental podem ser alertas.
+                                             Descubra os limites ideais de d...
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center mt-auto border-top pt-2">
+                                             <div class="d-flex align-items-center">
+                                                  <img src="../img/EllipseBlog3.png" alt="Beatriz"
+                                                       class="rounded-circle me-2" width="24" height="24"
+                                                       style="object-fit: cover;">
+                                                  <span class="fw-bold text-dark" style="font-size: 0.75rem;">Beatriz Santos</span>
+                                             </div>
+                                             <span class="text-secondary" style="font-size: 0.7rem;">5 min de leitura</span>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- 4. Paginação -->
+                         <div class="d-flex justify-content-center mb-5">
+                              <nav aria-label="Navegação do Blog">
+                                   <ul class="pagination pagination-sm gap-2">
+                                        <li class="page-item"><a
+                                                  class="page-link rounded-circle text-secondary border-0 bg-light"
+                                                  href="#"
+                                                  style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">&lt;</a>
+                                        </li>
+                                        <li class="page-item"><a
+                                                  class="page-link rounded-circle text-white border-0" href="#"
+                                                  style="background-color: #547565; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">1</a>
+                                        </li>
+                                        <li class="page-item"><a
+                                                  class="page-link rounded-circle text-secondary border-0 bg-light"
+                                                  href="#"
+                                                  style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">2</a>
+                                        </li>
+                                        <li class="page-item"><a
+                                                  class="page-link rounded-circle text-secondary border-0 bg-light"
+                                                  href="#"
+                                                  style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">3</a>
+                                        </li>
+                                        <li class="page-item"><a
+                                                  class="page-link rounded-circle text-secondary border-0 bg-light"
+                                                  href="#"
+                                                  style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">&gt;</a>
+                                        </li>
+                                   </ul>
+                              </nav>
+                         </div>
+
                     </div>
 
-                    <!-- Coluna Direita: Sidebar -->
+                    <!-- COLUNA DIREITA: Sidebar (Busca, Mais Lidos, Newsletter) -->
                     <div class="col-lg-4">
 
                          <!-- Box Buscar -->
@@ -152,12 +288,15 @@
                               </div>
                          </div>
 
+                         <!-- Box Newsletter -->
                          <div class="border rounded-4 shadow-sm p-4" style="background-color: #6B8E7D;">
-                              <h3 class="fw-bold mb-4" style="color: #FFFFFF">Receba Acolhimento na sua Caixa de Entrada</h3>
-                              <p class="text-p mb-4" style="color: #FFFFFF">Inscreva-se e receba reflexões de terapeutas e artigos mensais sobre bem-estar e saúde mental.</p>
-                              <input type="e-mail" class="form-control form-control-email mb-4" id="email"
-                                   placeholder="Seu E-Mail">
-                              <button class="btn btn-email fw-semibold w-100 mb-2">Cadastrar gratuitamente </button>
+                              <h3 class="fw-bold mb-4" style="color: #FFFFFF; font-size: 1.4rem;">Receba Acolhimento na sua Caixa de Entrada</h3>
+                              <p class="mb-4" style="color: #E2EBE8; font-size: 0.9rem;">
+                                   Inscreva-se e receba reflexões de terapeutas e artigos mensais sobre bem-estar e saúde mental.
+                              </p>
+                              <input type="email" class="form-control form-control-email mb-3" id="email"
+                                   placeholder="Seu melhor e-mail">
+                              <button class="btn btn-email fw-semibold w-100 mb-2">Cadastrar gratuitamente</button>
                          </div>
 
                     </div>
