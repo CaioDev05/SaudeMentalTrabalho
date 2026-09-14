@@ -25,12 +25,10 @@ let tipoAtual = "usuario";
 
 function atualizarFormulario() {
     if (modoAtual === "login") {
-        // --- MODO LOGIN ---
         toggleTipo.style.display = "none";
         btnSubmit.textContent = "Entrar na Minha Conta";
         textSocialMedia.textContent = "OU FAÇA LOGIN COM";
 
-        // Esconde campos desnecessários e remove obrigatoriedade
         boxNome.style.display = "none";
         inputNome.required = false;
 
@@ -42,7 +40,6 @@ function atualizarFormulario() {
         inputTermos.required = false;
 
     } else {
-        // --- MODO CADASTRO ---
         toggleTipo.style.display = "block";
         btnSubmit.textContent = "Criar Minha Conta Gratuita";
         textSocialMedia.textContent = "OU CADASTRE-SE COM";
@@ -55,7 +52,6 @@ function atualizarFormulario() {
         boxTermos.classList.add("d-flex"); 
         inputTermos.required = true;
 
-        // Regra específica para CRP
         if (tipoAtual === "voluntario") {
             boxCrp.style.display = "block";
             inputCrp.required = true;

@@ -310,8 +310,7 @@ body {
 }
 
 .btn-category-active {
-    background-color: #6B8E7D;
-    /* Ajustado para o tom de verde da imagem */
+    background-color: var(--theme-primary);
     color: #FFFFFF;
     border: 1px solid #6B8E7D;
 }
@@ -364,4 +363,29 @@ body {
 .form-check-input-custom:checked {
     background-color: #6B8E7D;
     border-color: #6B8E7D;
+}
+
+.pagination .page-link:focus {
+    box-shadow: none;
+}
+
+.btn-pagination-active {
+    background-color: #547565;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.15rem;
+}
+
+.btn-pagination-inactive {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid #E2EBE8;
+    padding: 1.15rem;
 }
