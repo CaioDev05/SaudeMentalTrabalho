@@ -114,8 +114,3 @@
     background-color: #F8F9FA;
 }
 
-/* Checkbox Personalizado */
-.form-check-input-custom:checked {
-    background-color: #6B8E7D;
-    border-color: #6B8E7D;
-}

@@ -1,13 +1,4 @@
-.btn-search {
-    padding: 1rem;
-    background-color: #3D5A4F;
-    color: #FFFFFF;
-}
 
-.btn-search:hover {
-    background-color: #5A7A6A;
-    color: #FFFFFF;
-}
 
 .card-contact {
     background: #5A7A6A;
@@ -25,23 +16,6 @@
 .btn-contact:hover {
   background-color: #f8f9fa;
   color: #5a7469;
-}
-
-/* 1. Transição suave no contêiner principal */
-.input-group {
-    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-/* 2. Remove o foco padrão apenas do campo de texto para ele não "cortar" no meio */
-.form-control:focus {
-    box-shadow: none !important;
-    border-color: transparent !important;
-    outline: none;
-}
-
-.input-group:focus-within {
-    border-color: #5a7469 !important;
-    box-shadow: 0 0 0 0.25rem rgba(118, 151, 132, 0.25);
 }
 
 /* 1. Estilo base do card inteiro (estado fechado/inativo) */
