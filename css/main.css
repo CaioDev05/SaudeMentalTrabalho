@@ -389,3 +389,22 @@ body {
     border: 1px solid #E2EBE8;
     padding: 1.15rem;
 }
+
+.tag-especializacao, .tag-star {
+    padding: 0.25rem 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.tag-star {
+    background-color: #F0F2FA;
+    color: #2C3330;
+}
+
+.tag-especializacao {
+    background-color: #EBF1EC;
+    color: #6B8E7D;
+}

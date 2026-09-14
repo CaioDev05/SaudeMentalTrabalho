@@ -1,0 +1,10 @@
+.btn-agendamento-outline {
+    background-color: #FFFFFF;
+    color: #2C3330;
+    border: 1.4px solid #E2EBE8;
+}
+
+.btn-agendamento-outline:hover {
+    background-color: #3D5A4F;
+    color: #FFFFFF;
+}
