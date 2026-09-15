@@ -9,6 +9,12 @@
     --theme-primary-hover:  #5A7A6A; /* Tom mais escuro para feedback de clique/hover */
     --theme-white: #FFFFFF;
     --theme-547565: #547565; /* Cor verde acinzentada */
+
+    --green-brand: #769784;
+    --green-brand-hover: #5d7a69;
+    --orange-brand: #E07A5F;
+    --bg-body: #FDFDFD;
+    --bg-hero: #F9F7F3;
 }
 
 body {
@@ -310,8 +316,7 @@ body {
 }
 
 .btn-category-active {
-    background-color: #6B8E7D;
-    /* Ajustado para o tom de verde da imagem */
+    background-color: var(--theme-primary);
     color: #FFFFFF;
     border: 1px solid #6B8E7D;
 }
@@ -330,4 +335,90 @@ body {
 .btn-category-inactive:hover {
     background-color: #F8F6F2;
     color: #212529;
+}
+
+.btn-search {
+    padding: 1rem;
+    background-color: #3D5A4F;
+    color: #FFFFFF;
+}
+
+.btn-search:hover {
+    background-color: #5A7A6A;
+    color: #FFFFFF;
+}
+
+/* 1. Transição suave no contêiner principal */
+.input-group {
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* 2. Remove o foco padrão apenas do campo de texto para ele não "cortar" no meio */
+.form-control:focus {
+    box-shadow: none !important;
+    border-color: transparent !important;
+    outline: none;
+}
+
+.input-group:focus-within {
+    border-color: #5a7469 !important;
+    box-shadow: 0 0 0 0.25rem rgba(118, 151, 132, 0.25);
+}
+
+/* Checkbox Personalizado */
+.form-check-input-custom:checked {
+    background-color: #6B8E7D;
+    border-color: #6B8E7D;
+}
+
+.pagination .page-link:focus {
+    box-shadow: none;
+}
+
+.btn-pagination-active {
+    background-color: #547565;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.15rem;
+}
+
+.btn-pagination-inactive {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid #E2EBE8;
+    padding: 1.15rem;
+}
+
+.tag-especializacao, .tag-star {
+    padding: 0.25rem 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.tag-star {
+    background-color: #F0F2FA;
+    color: #2C3330;
+}
+
+.tag-especializacao {
+    background-color: #EBF1EC;
+    color: #6B8E7D;
+}
+
+.btn-primary-custom {
+    border-radius: 0.5rem
+}
+.btn-primary-custom:hover {
+    background-color: var(--green-brand-hover);
+    color: white;
 }

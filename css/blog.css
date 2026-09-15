@@ -29,32 +29,6 @@
     color: #FFFFFF;
 }
 
-/* Removemos o foco padrão feio do bootstrap na paginação */
-.pagination .page-link:focus {
-    box-shadow: none;
-}
-
-.btn-pagination-active {
-    background-color: #547565;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.15rem;
-}
-
-.btn-pagination-inactive {
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FFFFFF;
-    border: 1px solid #E2EBE8;
-    padding: 1.15rem;
-}
-
 .most-read-title {
     color: #6B8E7D;
     font-weight: 600;
