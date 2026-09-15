@@ -8,3 +8,29 @@
     background-color: #3D5A4F;
     color: #FFFFFF;
 }
+
+.btn-horario-inactive {
+    background-color: #FAF7F2;
+}
+
+.btn-horario-active {
+    background-color: #8F94D2;
+    color: #FFFFFF;
+}
+
+.btn-acolhimento-active {
+    background-color: #EBF1EC;
+    border: 0.15rem solid #6B8E7D;
+}
+
+.btn-acolhimento-inactive {
+    border: 0.15rem solid #E2EBE8
+}
+
+.color-active {
+    color: #6B8E7D;
+}
+
+.color-inactive {
+    color:#E2EBE8;
+}
