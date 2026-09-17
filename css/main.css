@@ -422,3 +422,34 @@ body {
     background-color: var(--green-brand-hover);
     color: white;
 }
+
+@media (max-width: 767.98px) {
+    .bg-atende-voluntario .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .bg-atende-voluntario .text-center {
+        margin: 1.5rem 0 !important;
+    }
+
+    .bg-atende-voluntario h1 {
+        font-size: 1.8rem;
+        line-height: 1.25;
+    }
+
+    .bg-atende-voluntario p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .bg-atende-voluntario a {
+        display: block !important;
+        width: 100%;
+    }
+
+    .bg-atende-voluntario .btn {
+        width: 100%;
+        max-width: 350px;
+    }
+}
