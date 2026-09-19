@@ -1,5 +1,3 @@
-
-
 .card-contact {
     background: #5A7A6A;
     border-radius: 1.5rem;
@@ -18,35 +16,30 @@
   color: #5a7469;
 }
 
-/* 1. Estilo base do card inteiro (estado fechado/inativo) */
 .accordion-item.card-faq {
     background-color: #FFFFFF;
-    border: 3px solid #EAEAEA; /* Borda cinza clara para inativos */
+    border: 3px solid #EAEAEA; 
     border-radius: 1.25rem !important;
-    overflow: hidden; /* Impede que o fundo do botão vaze pelas bordas arredondadas */
+    overflow: hidden; 
     transition: border-color 0.3s ease;
 }
 
-/* 2. Estilo do card quando está ATIVO (aberto) */
 .accordion-item.card-faq:has(.accordion-button:not(.collapsed)) {
-    border-color: #6B8E7D; /* Borda verde quando ativo */
+    border-color: #6B8E7D; 
 }
 
-/* 3. Limpeza visual do Botão (Título) */
 .accordion-item.card-faq .accordion-button {
-    background-color: transparent !important; /* Remove o fundo azul padrão */
-    color: #212529 !important; /* Mantém o texto escuro */
-    box-shadow: none !important; /* Remove a sombra/borda azul ao clicar */
+    background-color: transparent !important;
+    color: #212529 !important; 
+    box-shadow: none !important; 
     padding: 1.5rem;
     font-size: 1.1rem;
 }
 
-/* 4. Remoção da seta padrão do Bootstrap */
 .accordion-item.card-faq .accordion-button::after {
     display: none;
 }
 
-/* 1. Prepara o conteúdo oculto para o efeito */
 .accordion-item.card-faq .accordion-body {
     padding: 0 1.5rem 1.5rem 1.5rem;
     color: #6c757d;
@@ -56,12 +49,10 @@
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* 2. Suaviza a expansão de altura nativa do Bootstrap */
 .accordion-collapse.collapsing {
     transition: height 0.35s ease-in-out;
 }
 
-/* 3. Aplica o efeito visual quando o painel termina de abrir */
 .accordion-collapse.show .accordion-body {
     opacity: 1;
     transform: translateY(0);

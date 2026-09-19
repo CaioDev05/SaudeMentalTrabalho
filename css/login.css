@@ -1,13 +1,11 @@
-/* Cor de fundo da seção principal para dar contraste com o formulário branco */
 .bg-section {
     background-color: #F9F8F6;
 }
 
-/* Ajuste do Card de Login */
 .bg-login {
     background-color: #FFFFFF;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); /* Sombra mais difusa e suave */
-    border-radius: 24px; /* Reduzido de 50px para combinar com a imagem */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); 
+    border-radius: 24px; 
     padding: 2.5rem !important;
 }
 
@@ -22,7 +20,6 @@
     letter-spacing: 0.5px;
 }
 
-/* Container de botões (Toggle de Abas) */
 .toggle-container {
     background-color: #F9F8F6;
     border-radius: 50px;
@@ -51,8 +48,6 @@
     background-color: #3D5A4F;
     color: #FFFFFF;
 }
-
-/* Botão de Envio (Criar Conta) */
 .btn-primary-custom {
     background-color: #3D5A4F;
     border-color: #3D5A4F;
@@ -67,7 +62,6 @@
     color: #FFFFFF;
 }
 
-/* Campos de Input */
 .form-control-custom {
     border-radius: 12px;
     border: 1px solid #E2EBE8;
@@ -81,7 +75,6 @@
     box-shadow: 0 0 0 0.2rem rgba(107, 142, 125, 0.25);
 }
 
-/* Grupo de Input para a Senha (ícone do olho) */
 .input-group-password .form-control-custom {
     border-right: none;
     border-top-right-radius: 0;
@@ -98,7 +91,6 @@
     color: #A0AAB2;
 }
 
-/* Botões Sociais */
 .btn-outline-social {
     border: 1px solid #E2EBE8;
     background-color: #FFFFFF;

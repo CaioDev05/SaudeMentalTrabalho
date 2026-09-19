@@ -1,14 +1,12 @@
 :root {
-    /* Corrigido para formato RGB (R, G, B) para evitar quebra no Bootstrap */
     --bs-emphasis-color-rgb: 96, 107, 102; 
     --bs-emphasis-color: #2B3330;
     --bs-text-p: #606B66;
     
-    /* Variáveis globais para o tema para facilitar futuras alterações */
     --theme-primary: #3D5A4F;
-    --theme-primary-hover:  #5A7A6A; /* Tom mais escuro para feedback de clique/hover */
+    --theme-primary-hover:  #5A7A6A; 
     --theme-white: #FFFFFF;
-    --theme-547565: #547565; /* Cor verde acinzentada */
+    --theme-547565: #547565; 
 
     --green-brand: #769784;
     --green-brand-hover: #5d7a69;
@@ -22,7 +20,6 @@ body {
     max-height: 100vh;
 }
 
-/* Agrupamento de propriedades repetidas nos botões */
 .btn-success, .btn-agendar, .btn-voluntario,
 .btn-outline-secondary {
     border-radius: 2.25rem;
@@ -48,7 +45,7 @@ body {
 }
 
 .btn-agendar {
-    --bs-btn-color: #6B8E7D; /* Cor do texto do botão */
+    --bs-btn-color: #6B8E7D; 
     --bs-btn-bg: var(--theme-white);
     --bs-btn-border-color: var(--theme-white);
     --bs-btn-hover-color: #fff;
@@ -65,7 +62,7 @@ body {
 }
 
 .btn-voluntario {
-    --bs-btn-color: var(--theme-white); /* Cor do texto do botão */
+    --bs-btn-color: var(--theme-white);
     --bs-btn-bg: var(--theme-547565);
     --bs-btn-border-color: var(--theme-547565);
     --bs-btn-hover-color: #fff;
@@ -82,8 +79,8 @@ body {
 }
 
 .btn-voluntario, .btn-agendar {
-    min-width: 300px; /* Garante que os botões tenham largura mínima consistente */
-    min-height: 60px; /* Garante que os botões tenham altura mínima consistente */
+    min-width: 300px; 
+    min-height: 60px; 
 }
 
 .btn-outline-secondary {
@@ -106,14 +103,9 @@ body {
 .text-p li {
     font-size: 1.125rem;
     font-weight: 500;
-    color: inherit; /* Herda o --bs-text-p da classe pai automaticamente */
+    color: inherit
 }
 
-/* =========================================
-   HERANÇA: .card-lt e .card-lt-hero
-   ========================================= */
-
-/* 1. Propriedades base compartilhadas (Herança) */
 .card-lt, 
 .card-lt-hero {
     font-weight: bold;
@@ -123,36 +115,31 @@ body {
     padding: 0.05rem 1rem;
 }
 
-/* ... Suas variáveis :root continuam iguais ... */
-
 .bg-grid {
     background-color: #E8EFEA;
 }
 
-/* Ajuste dos Cartões Brancos */
 .bg-grid-div {
     background-color: #FFFFFF;
-    padding: 2rem 1.5rem; /* Mais espaçamento interno para imitar a imagem */
-    border-radius: 1.5rem; /* Bordas bem arredondadas, mas um pouco mais suaves que 2.25rem */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); /* Sombra super leve (opcional, dá profundidade) */
+    padding: 2rem 1.5rem; 
+    border-radius: 1.5rem; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
     min-height: 220px;
     max-height: 220px;
 }
 
-/* Cor e tamanho customizados para os números grandes */
+
 .text-numbers {
-    color: #6C8E7B; /* Tom de verde acinzentado inspirado na imagem */
+    color: #6C8E7B; 
     font-size: 2.8rem;
     letter-spacing: -1px;
 }
 
-/* Subtítulos menores e mais sutis */
 .text-p {
     color: var(--bs-text-p);
     font-weight: 350;
 }
 
-/* Remove a margem extra inferior da tag P dentro do cartão para melhor alinhamento */
 .bg-grid-div p.small {
     font-size: 1rem;
 }
@@ -162,18 +149,18 @@ body {
 }
 
 .bg-footer-custom {
-    background-color: #313632; /* Cor de fundo esverdeada/acinzentada escura */
+    background-color: #313632; 
     color: #ffffff;
 }
 .text-muted-custom {
-    color: #a4aba6 !important; /* Cor do texto secundário */
+    color: #a4aba6 !important; 
 }
 .emergency-card {
-    background-color: #3e4440; /* Fundo do card de emergência */
+    background-color: #3e4440; 
     border-radius: 8px;
 }
 .emergency-title {
-    color: #8a96c6; /* Cor roxa/azulada do título de emergência */
+    color: #8a96c6; 
     font-size: 0.75rem;
     letter-spacing: 0.5px;
 }
@@ -184,7 +171,7 @@ body {
 .social-btn {
     width: 40px;
     height: 40px;
-    background-color: #424945; /* Fundo dos botões sociais */
+    background-color: #424945; 
     border: none;
     color: white;
     display: inline-flex;
@@ -206,12 +193,12 @@ body {
 }
 
 .bg-passo-a-passo {
-    background-color: #f3f5fb; /* Fundo azul acinzentado claro */
+    background-color: #f3f5fb; 
 }
 
 .badge-passo {
-    background-color: #eaf1ed; /* Fundo esverdeado da tag */
-    color: #5c7b64; /* Texto verde escuro */
+    background-color: #eaf1ed; 
+    color: #5c7b64; 
     padding: 0.4rem 1.2rem;
     border-radius: 50rem;
     font-size: 0.75rem;
@@ -220,9 +207,9 @@ body {
 
 .step-card {
     background-color: #ffffff;
-    border-radius: 24px; /* Bordas bem arredondadas */
-    padding: 2.5rem 2rem; /* Espaçamento interno */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); /* Sombra bem sutil */
+    border-radius: 24px; 
+    padding: 2.5rem 2rem; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); 
     display: flex;
     flex-direction: column;
 }
@@ -231,8 +218,8 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #eceffe; /* Fundo lilás claro */
-    color: #7983c8; /* Texto lilás escuro */
+    background-color: #eceffe; 
+    color: #7983c8; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,39 +229,37 @@ body {
 }
 
 .bg-atende-voluntario {
-    background-color: #6B8E7D; /* Fundo azul acinzentado claro */
-    padding: 2.5rem 2rem; /* Espaçamento interno */
+    background-color: #6B8E7D; 
+    padding: 2.5rem 2rem; 
 }
 
 .bg-importancia {
-    background-color: #f3f5fb; /* Fundo azul acinzentado claro */
-    padding: 2.5rem 2rem; /* Espaçamento interno */
+    background-color: #f3f5fb; 
+    padding: 2.5rem 2rem; 
 }
 
 .bg-importancia-card {
     background-color: #FFF; 
-    border-radius: 24px; /* Bordas bem arredondadas */
+    border-radius: 24px; 
     width: 17rem;
-    padding: 2rem 1.5rem; /* Ajustei levemente o padding para os itens respirarem melhor */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); /* Sombra bem sutil */
+    padding: 2rem 1.5rem; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); 
     margin: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-/* Nova classe para o fundo arredondado dos ícones */
 .icon-wrapper {
-    background-color: #e8f5e9; /* Fundo verde bem suave */
-    color: #2e7d32; /* Cor do ícone mais escura para contraste */
+    background-color: #e8f5e9; 
+    color: #2e7d32; 
     min-width: 45px;
     height: 45px;
-    border-radius: 50%; /* Deixa perfeitamente redondo */
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Estilo sutil para o texto descritivo */
 .card-desc {
     color: #6c757d;
     font-size: 0.9rem;
@@ -286,7 +271,6 @@ body {
     padding: 4rem 0;
 }
 
-/* Caixas de Conteúdo (Cards Brancos) */
 .content-box {
     background-color: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -294,7 +278,6 @@ body {
     padding: 2.5rem;
 }
 
-/* Efeito sutil de hover nos cards */
 .card-hover {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -304,7 +287,6 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
 }
 
-/* Ajuste de Botões de Categoria para usarem flex-wrap e gap sem quebrar o layout */
 .btn-category-active,
 .btn-category-inactive {
     border-radius: 1.75rem;
@@ -312,7 +294,6 @@ body {
     font-size: 0.85rem;
     transition: all 0.2s ease-in-out;
     margin: 0;
-    /* Removido margin-right fixo para usar o gap do bootstrap */
 }
 
 .btn-category-active {
@@ -348,12 +329,10 @@ body {
     color: #FFFFFF;
 }
 
-/* 1. Transição suave no contêiner principal */
 .input-group {
     transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-/* 2. Remove o foco padrão apenas do campo de texto para ele não "cortar" no meio */
 .form-control:focus {
     box-shadow: none !important;
     border-color: transparent !important;
@@ -365,7 +344,6 @@ body {
     box-shadow: 0 0 0 0.25rem rgba(118, 151, 132, 0.25);
 }
 
-/* Checkbox Personalizado */
 .form-check-input-custom:checked {
     background-color: #6B8E7D;
     border-color: #6B8E7D;

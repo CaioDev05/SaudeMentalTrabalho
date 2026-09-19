@@ -1,0 +1,124 @@
+@media (max-width: 767.98px) {
+    header .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    header nav {
+        gap: .5rem;
+    }
+
+    header nav>div:first-child {
+        justify-content: center;
+        width: 100%;
+    }
+
+    header nav>ul {
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+        padding-bottom: .25rem;
+    }
+
+    header nav>ul .nav-link {
+        white-space: nowrap;
+    }
+
+    header nav>div:last-child {
+        width: 100%;
+        margin-top: .5rem !important;
+    }
+
+    header nav>div:last-child .btn {
+        width: 100%;
+    }
+
+    main .container.px-4 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    h1.display-5 {
+        font-size: 2rem;
+    }
+
+    .input-group {
+        flex-wrap: wrap;
+        border-radius: 1rem !important;
+        padding: .5rem !important;
+    }
+
+    .input-group>div {
+        margin: 0 !important;
+        padding: .5rem;
+    }
+
+    .input-group .form-control {
+        min-width: 0;
+        flex: 1 1 calc(100% - 2.5rem);
+    }
+
+    .input-group .btn {
+        width: 100%;
+        margin-top: .5rem;
+    }
+
+    .content-box {
+        overflow: hidden;
+    }
+
+    .content-box .row {
+        row-gap: 1rem;
+    }
+
+    .content-box .col-12.col-md-3 img {
+        width: 100%;
+        max-width: 160px;
+    }
+
+    .content-box .col-12.col-md-9>div:first-child {
+        flex-wrap: wrap;
+        gap: .75rem;
+    }
+
+    .content-box .col-12.col-md-9 h3 {
+        font-size: 1.4rem;
+    }
+
+    .content-box .col-12.col-md-9 .d-flex.gap-2 {
+        flex-wrap: wrap;
+    }
+
+    .content-box .col-12.col-md-9 .d-flex.gap-3 {
+        flex-wrap: wrap;
+    }
+
+    .content-box .col-12.col-md-9 .d-flex.gap-3 .btn {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    footer .row>div {
+        text-align: center;
+    }
+
+    footer .social-btn {
+        margin-right: .5rem !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .content-box {
+        padding: 1rem !important;
+    }
+
+    .content-box .tag-star {
+        padding-left: .65rem !important;
+        padding-right: .65rem !important;
+    }
+
+    .pagination {
+        gap: .15rem !important;
+    }
+}

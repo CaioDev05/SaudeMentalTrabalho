@@ -36,7 +36,7 @@ function atualizarFormulario() {
         inputCrp.required = false;
 
         boxTermos.style.display = "none";
-        boxTermos.classList.remove("d-flex"); // Evita conflitos de layout flex
+        boxTermos.classList.remove("d-flex");
         inputTermos.required = false;
 
     } else {
@@ -44,7 +44,6 @@ function atualizarFormulario() {
         btnSubmit.textContent = "Criar Minha Conta Gratuita";
         textSocialMedia.textContent = "OU CADASTRE-SE COM";
 
-        // Nome e Termos sempre aparecem no cadastro
         boxNome.style.display = "block";
         inputNome.required = true;
 
