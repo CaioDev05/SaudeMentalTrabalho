@@ -51,7 +51,7 @@
      <main class="bg-section">
           <section>
                <div class="container px-4 py-5">
-                    <div class="row flex-lg-reverse align-items-center g-5 py-5">
+                    <div class="row flex-lg-reverse align-items-start g-5 py-5">
 
                          <div class="col-12 col-lg-6 mx-auto pe-lg-5">
                               <div class="mb-4">
@@ -117,6 +117,115 @@
                                                   placeholder="maria@exemplo.com" required>
                                         </div>
 
+                                        <div class="mb-3" id="box-dados-cadastro">
+                                             <!-- Campos obrigatórios solicitados -->
+                                             <div class="row g-3">
+                                                  <div class="col-12 col-md-6">
+                                                       <label for="valor" class="form-label" style="font-size: 0.9rem;">Valor (R$)</label>
+                                                       <input type="number" class="form-control form-control-custom" id="valor"
+                                                            placeholder="Ex: 150,00" min="0" step="0.01" required>
+                                                  </div>
+                                                  <div class="col-12 col-md-6">
+                                                       <label for="data" class="form-label" style="font-size: 0.9rem;">Data</label>
+                                                       <input type="date" class="form-control form-control-custom" id="data" required>
+                                                  </div>
+                                                  <div class="col-12 col-md-6">
+                                                       <label for="cpf" class="form-label" style="font-size: 0.9rem;">CPF</label>
+                                                       <input type="text" class="form-control form-control-custom" id="cpf"
+                                                            placeholder="000.000.000-00" minlength="11" maxlength="14" required>
+                                                  </div>
+                                                  <div class="col-12 col-md-6">
+                                                       <label for="cnpj" class="form-label" style="font-size: 0.9rem;">CNPJ</label>
+                                                       <input type="text" class="form-control form-control-custom" id="cnpj"
+                                                            placeholder="00.000.000/0000-00" minlength="14" maxlength="18" required>
+                                                  </div>
+                                                  <div class="col-12 col-md-6">
+                                                       <label for="cep" class="form-label" style="font-size: 0.9rem;">CEP</label>
+                                                       <input type="text" class="form-control form-control-custom" id="cep"
+                                                            placeholder="00000-000" minlength="8" maxlength="9" required>
+                                                  </div>
+                                                  <div class="col-12 col-md-6">
+                                                       <label for="telefone" class="form-label" style="font-size: 0.9rem;">Telefone</label>
+                                                       <input type="tel" class="form-control form-control-custom" id="telefone"
+                                                            placeholder="(00) 00000-0000" minlength="10" maxlength="15" required>
+                                                  </div>
+                                             </div>
+
+                                             <!-- Campos extras preparados para validações futuras -->
+                                             <div class="row g-3 mt-1">
+                                                  <div class="col-12 col-md-6">
+                                                       <label for="idade" class="form-label" style="font-size: 0.9rem;">Idade</label>
+                                                       <input type="number" class="form-control form-control-custom" id="idade"
+                                                            placeholder="Ex: 28" min="18" max="120">
+                                                  </div>
+                                                  <div class="col-12 col-md-6">
+                                                       <label for="rg" class="form-label" style="font-size: 0.9rem;">RG</label>
+                                                       <input type="text" class="form-control form-control-custom" id="rg"
+                                                            placeholder="00.000.000-0" pattern="[0-9Xx.\-]{7,14}" minlength="7"
+                                                            maxlength="14" required>
+                                                  </div>
+                                                  <div class="col-12 col-md-6">
+                                                       <label for="estado-civil" class="form-label" style="font-size: 0.9rem;">Estado civil</label>
+                                                       <select class="form-select form-control-custom" id="estado-civil">
+                                                            <option value="">Selecione</option>
+                                                            <option value="solteiro">Solteiro(a)</option>
+                                                            <option value="casado">Casado(a)</option>
+                                                            <option value="divorciado">Divorciado(a)</option>
+                                                            <option value="viuvo">Viúvo(a)</option>
+                                                            <option value="outro">Outro</option>
+                                                       </select>
+                                                  </div>
+                                                  <div class="col-12 col-md-6">
+                                                       <label for="data-nascimento" class="form-label" style="font-size: 0.9rem;">Data de nascimento</label>
+                                                       <input type="date" class="form-control form-control-custom" id="data-nascimento"
+                                                            required>
+                                                  </div>
+                                                  <div class="col-12 col-md-6">
+                                                       <label for="estado" class="form-label" style="font-size: 0.9rem;">Estado (UF)</label>
+                                                       <select class="form-select form-control-custom" id="estado" required>
+                                                            <option value="">Selecione</option>
+                                                            <option value="AC">AC</option>
+                                                            <option value="AL">AL</option>
+                                                            <option value="AP">AP</option>
+                                                            <option value="AM">AM</option>
+                                                            <option value="BA">BA</option>
+                                                            <option value="CE">CE</option>
+                                                            <option value="DF">DF</option>
+                                                            <option value="ES">ES</option>
+                                                            <option value="GO">GO</option>
+                                                            <option value="MA">MA</option>
+                                                            <option value="MT">MT</option>
+                                                            <option value="MS">MS</option>
+                                                            <option value="MG">MG</option>
+                                                            <option value="PA">PA</option>
+                                                            <option value="PB">PB</option>
+                                                            <option value="PR">PR</option>
+                                                            <option value="PE">PE</option>
+                                                            <option value="PI">PI</option>
+                                                            <option value="RJ">RJ</option>
+                                                            <option value="RN">RN</option>
+                                                            <option value="RS">RS</option>
+                                                            <option value="RO">RO</option>
+                                                            <option value="RR">RR</option>
+                                                            <option value="SC">SC</option>
+                                                            <option value="SP">SP</option>
+                                                            <option value="SE">SE</option>
+                                                            <option value="TO">TO</option>
+                                                       </select>
+                                                  </div>
+                                                  <div class="col-12 col-md-6">
+                                                       <label for="cidade" class="form-label" style="font-size: 0.9rem;">Cidade</label>
+                                                       <input type="text" class="form-control form-control-custom" id="cidade"
+                                                            placeholder="Ex: São Paulo" minlength="2" maxlength="80" required>
+                                                  </div>
+                                                  <div class="col-12">
+                                                       <label for="site-pessoal" class="form-label" style="font-size: 0.9rem;">Site ou portfólio</label>
+                                                       <input type="url" class="form-control form-control-custom" id="site-pessoal"
+                                                            placeholder="https://meusite.com">
+                                                  </div>
+                                             </div>
+                                        </div>
+
                                         <!-- Campo CRP (Aparece apenas no Cadastro de Voluntário) -->
                                         <div class="mb-3" id="box-crp" style="display: none;">
                                              <label for="crp" class="form-label" style="font-size: 0.9rem;">CRP</label>
@@ -130,9 +239,15 @@
                                                   Secreta</label>
                                              <div class="input-group input-group-password">
                                                   <input type="password" class="form-control form-control-custom"
-                                                       id="senha" placeholder="••••••••••••" required>
+                                                       id="senha" placeholder="••••••••••••" minlength="8" required>
                                                   <span class="input-group-text" id="btn-password-visible"><i class="bi bi-eye-slash" id="icon-password-visible"></i></span>
                                              </div>
+                                        </div>
+
+                                        <div class="mb-4" id="box-confirmar-senha">
+                                             <label for="confirmar-senha" class="form-label" style="font-size: 0.9rem;">Confirmar senha</label>
+                                             <input type="password" class="form-control form-control-custom" id="confirmar-senha"
+                                                  placeholder="Repita sua senha" minlength="8" required>
                                         </div>
 
                                         <!-- Checkbox Termos (Fica invisível no Login) -->

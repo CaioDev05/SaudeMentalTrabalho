@@ -13,12 +13,19 @@ const inputNome = document.getElementById("nome");
 const boxCrp = document.getElementById("box-crp");
 const inputCrp = document.getElementById("crp");
 
+const boxDadosCadastro = document.getElementById("box-dados-cadastro");
+const inputsDadosCadastro = boxDadosCadastro.querySelectorAll("input, select");
+
 const boxTermos = document.getElementById("box-termos");
 const inputTermos = document.getElementById("termos");
 
 const btnPasswordVisible = document.getElementById("btn-password-visible");
 const inputPassword = document.getElementById("senha");
 const iconPasswordVisible = document.getElementById("icon-password-visible");
+const boxConfirmarSenha = document.getElementById("box-confirmar-senha");
+const inputConfirmarSenha = document.getElementById("confirmar-senha");
+const inputDataNascimento = document.getElementById("data-nascimento");
+const mainForm = document.getElementById("mainForm");
 
 let modoAtual = "cadastro"; 
 let tipoAtual = "usuario"; 
@@ -32,12 +39,17 @@ function atualizarFormulario() {
         boxNome.style.display = "none";
         inputNome.required = false;
 
+        boxDadosCadastro.style.display = "none";
+        inputsDadosCadastro.forEach((input) => input.required = false);
+
         boxCrp.style.display = "none";
         inputCrp.required = false;
 
         boxTermos.style.display = "none";
         boxTermos.classList.remove("d-flex");
         inputTermos.required = false;
+        boxConfirmarSenha.style.display = "none";
+        inputConfirmarSenha.required = false;
 
     } else {
         toggleTipo.style.display = "block";
@@ -47,9 +59,18 @@ function atualizarFormulario() {
         boxNome.style.display = "block";
         inputNome.required = true;
 
+        boxDadosCadastro.style.display = "block";
+        inputsDadosCadastro.forEach((input) => {
+            if (["valor", "data", "cpf", "cnpj", "cep", "telefone", "rg", "data-nascimento", "estado", "cidade"].includes(input.id)) {
+                input.required = true;
+            }
+        });
+
         boxTermos.style.display = "block";
         boxTermos.classList.add("d-flex"); 
         inputTermos.required = true;
+        boxConfirmarSenha.style.display = "block";
+        inputConfirmarSenha.required = true;
 
         if (tipoAtual === "voluntario") {
             boxCrp.style.display = "block";
@@ -104,5 +125,28 @@ btnPasswordVisible.addEventListener("click", () => {
         inputPassword.type = "password";
     }
 });
+
+function validarSenhas() {
+    if (modoAtual === "cadastro" && inputConfirmarSenha.value !== inputPassword.value) {
+        inputConfirmarSenha.setCustomValidity("As senhas informadas não coincidem.");
+    } else {
+        inputConfirmarSenha.setCustomValidity("");
+    }
+}
+
+inputPassword.addEventListener("input", validarSenhas);
+inputConfirmarSenha.addEventListener("input", validarSenhas);
+
+mainForm.addEventListener("submit", (event) => {
+    validarSenhas();
+    if (!mainForm.checkValidity()) {
+        event.preventDefault();
+        mainForm.reportValidity();
+    }
+});
+
+const hoje = new Date();
+const maxDataNascimento = hoje.toISOString().split("T")[0];
+inputDataNascimento.max = maxDataNascimento;
 
 atualizarFormulario();

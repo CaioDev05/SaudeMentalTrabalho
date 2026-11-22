@@ -75,6 +75,11 @@
     box-shadow: 0 0 0 0.2rem rgba(107, 142, 125, 0.25);
 }
 
+.form-select.form-control-custom {
+    min-height: 48px;
+    background-position: right 1rem center;
+}
+
 .input-group-password .form-control-custom {
     border-right: none;
     border-top-right-radius: 0;
