@@ -100,13 +100,13 @@
                                         </div>
                                    </span>
 
-                                   <form id="mainForm">
+                                   <form id="mainForm" novalidate>
                                         <!-- Campo Nome (Fica invisível no Login) -->
                                         <div class="mb-3" id="box-nome">
                                              <label for="nome" class="form-label" style="font-size: 0.9rem;">Nome
                                                   Completo (ou Codinome)</label>
                                              <input type="text" class="form-control form-control-custom" id="nome"
-                                                  placeholder="Ex: Maria da Silva" required>
+                                                  placeholder="Ex: Maria da Silva" maxlength="100" required>
                                         </div>
 
                                         <!-- Campo Email (Sempre Visível) -->
@@ -114,7 +114,7 @@
                                              <label for="email" class="form-label" style="font-size: 0.9rem;">Endereço
                                                   de E-mail</label>
                                              <input type="email" class="form-control form-control-custom" id="email"
-                                                  placeholder="maria@exemplo.com" required>
+                                                  placeholder="maria@exemplo.com" maxlength="40" required>
                                         </div>
 
                                         <div class="mb-3" id="box-dados-cadastro">
@@ -122,12 +122,13 @@
                                              <div class="row g-3">
                                                   <div class="col-12 col-md-6">
                                                        <label for="valor" class="form-label" style="font-size: 0.9rem;">Valor (R$)</label>
-                                                       <input type="number" class="form-control form-control-custom" id="valor"
-                                                            placeholder="Ex: 150,00" min="0" step="0.01" required>
+                                                       <input type="text" class="form-control form-control-custom" id="valor"
+                                                            placeholder="R$ 150,00" maxlength="20" inputmode="decimal" required>
                                                   </div>
                                                   <div class="col-12 col-md-6">
                                                        <label for="data" class="form-label" style="font-size: 0.9rem;">Data</label>
-                                                       <input type="date" class="form-control form-control-custom" id="data" required>
+                                                       <input type="text" class="form-control form-control-custom" id="data"
+                                                            placeholder="DD/MM/AAAA" maxlength="10" inputmode="numeric" required>
                                                   </div>
                                                   <div class="col-12 col-md-6">
                                                        <label for="cpf" class="form-label" style="font-size: 0.9rem;">CPF</label>
@@ -156,17 +157,16 @@
                                                   <div class="col-12 col-md-6">
                                                        <label for="idade" class="form-label" style="font-size: 0.9rem;">Idade</label>
                                                        <input type="number" class="form-control form-control-custom" id="idade"
-                                                            placeholder="Ex: 28" min="18" max="120">
+                                                           placeholder="Ex: 28" min="19" max="120" required>
                                                   </div>
                                                   <div class="col-12 col-md-6">
                                                        <label for="rg" class="form-label" style="font-size: 0.9rem;">RG</label>
                                                        <input type="text" class="form-control form-control-custom" id="rg"
-                                                            placeholder="00.000.000-0" pattern="[0-9Xx.\-]{7,14}" minlength="7"
-                                                            maxlength="14" required>
+                                                            placeholder="00.000.000-0" maxlength="12" required>
                                                   </div>
                                                   <div class="col-12 col-md-6">
                                                        <label for="estado-civil" class="form-label" style="font-size: 0.9rem;">Estado civil</label>
-                                                       <select class="form-select form-control-custom" id="estado-civil">
+                                                       <select class="form-select form-control-custom" id="estado-civil" required>
                                                             <option value="">Selecione</option>
                                                             <option value="solteiro">Solteiro(a)</option>
                                                             <option value="casado">Casado(a)</option>
@@ -177,8 +177,8 @@
                                                   </div>
                                                   <div class="col-12 col-md-6">
                                                        <label for="data-nascimento" class="form-label" style="font-size: 0.9rem;">Data de nascimento</label>
-                                                       <input type="date" class="form-control form-control-custom" id="data-nascimento"
-                                                            required>
+                                                       <input type="text" class="form-control form-control-custom" id="data-nascimento"
+                                                            placeholder="DD/MM/AAAA" maxlength="10" inputmode="numeric" required>
                                                   </div>
                                                   <div class="col-12 col-md-6">
                                                        <label for="estado" class="form-label" style="font-size: 0.9rem;">Estado (UF)</label>
@@ -216,12 +216,12 @@
                                                   <div class="col-12 col-md-6">
                                                        <label for="cidade" class="form-label" style="font-size: 0.9rem;">Cidade</label>
                                                        <input type="text" class="form-control form-control-custom" id="cidade"
-                                                            placeholder="Ex: São Paulo" minlength="2" maxlength="80" required>
+                                                            placeholder="Ex: São Paulo" minlength="2" maxlength="50" required>
                                                   </div>
                                                   <div class="col-12">
                                                        <label for="site-pessoal" class="form-label" style="font-size: 0.9rem;">Site ou portfólio</label>
-                                                       <input type="url" class="form-control form-control-custom" id="site-pessoal"
-                                                            placeholder="https://meusite.com">
+                                                       <input type="text" class="form-control form-control-custom" id="site-pessoal"
+                                                            placeholder="https://meusite.com" maxlength="100" required>
                                                   </div>
                                              </div>
                                         </div>
@@ -230,7 +230,8 @@
                                         <div class="mb-3" id="box-crp" style="display: none;">
                                              <label for="crp" class="form-label" style="font-size: 0.9rem;">CRP</label>
                                              <input type="text" class="form-control form-control-custom" id="crp"
-                                                  placeholder="Ex: CRP 06/124589">
+                                                  placeholder="CRP 06/124589" minlength="12" maxlength="13"
+                                                  pattern="CRP [0-9]{2}/[0-9]{5,6}">
                                         </div>
 
                                         <!-- Campo Senha (Sempre Visível) -->
@@ -239,15 +240,24 @@
                                                   Secreta</label>
                                              <div class="input-group input-group-password">
                                                   <input type="password" class="form-control form-control-custom"
-                                                       id="senha" placeholder="••••••••••••" minlength="8" required>
-                                                  <span class="input-group-text" id="btn-password-visible"><i class="bi bi-eye-slash" id="icon-password-visible"></i></span>
+                                                      id="senha" placeholder="••••••••••••" maxlength="30" required>
+                                                  <button type="button" class="input-group-text" id="btn-password-visible"
+                                                       aria-label="Mostrar senha" title="Mostrar senha">
+                                                       <i class="bi bi-eye-slash" id="icon-password-visible"></i>
+                                                  </button>
                                              </div>
                                         </div>
 
                                         <div class="mb-4" id="box-confirmar-senha">
                                              <label for="confirmar-senha" class="form-label" style="font-size: 0.9rem;">Confirmar senha</label>
-                                             <input type="password" class="form-control form-control-custom" id="confirmar-senha"
-                                                  placeholder="Repita sua senha" minlength="8" required>
+                                             <div class="input-group input-group-password">
+                                                  <input type="password" class="form-control form-control-custom" id="confirmar-senha"
+                                                       placeholder="Repita sua senha" maxlength="30" required>
+                                                  <button type="button" class="input-group-text" id="btn-confirmar-senha-visible"
+                                                       aria-label="Mostrar confirmação de senha" title="Mostrar confirmação de senha">
+                                                       <i class="bi bi-eye-slash" id="icon-confirmar-senha-visible"></i>
+                                                  </button>
+                                             </div>
                                         </div>
 
                                         <!-- Checkbox Termos (Fica invisível no Login) -->
